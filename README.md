@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/tyhuxbfxxcsn2g7m?svg=true)](https://ci.appveyor.com/project/Zlata27/debitcard)
