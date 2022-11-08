@@ -2,10 +2,14 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class DebitCardTest {
+
+
+
+public class DebitCardTest1 {
 
     private WebDriver driver;
 
@@ -25,10 +29,12 @@ public class DebitCardTest {
         driver = null;
     }
 
+
     @Test
-    void shouldTestSomething() {
+    void shouldWriteSomething() {
         driver.get("http://localhost:9999/");
+        driver.findElements(By.cssSelector("[data-test-id=name] input")).sendKeys("Иван");
     }
 
-
+    
 }
