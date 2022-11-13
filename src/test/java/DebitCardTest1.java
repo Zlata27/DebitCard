@@ -77,7 +77,7 @@ public class DebitCardTest1 {
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79999999998");
         driver.findElement(By.className("button__text")).click();
         String expected = "Я соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй";
-        String actual = driver.findElement(By.cssSelector("[data-test-id=\"agreement\"]")).getText().trim();
+        String actual = driver.findElement(By.cssSelector("[data-test-id=agreement].input_invalid")).getText().trim();
         assertEquals(expected, actual);
     }
 
